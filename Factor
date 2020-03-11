@@ -9,15 +9,15 @@ public class Factor {
   
   precteted List<Ability> abilitys = new ArrayList<>();
   
-  public final void has(Attribute attribute){
+  public final void has(Attribute<? extends Attribute> attribute){
     attributes.add(attribute);
   }
   
-  public final void learned(Ability ability){
+  public final void learned(Ability<? extends Ability> ability){
     abilitys.add(ability);
   }
   
-  public void show(Ability ability){
+  public void show(Ability<? extends Ability> ability){
     if(this.ability.contain(ability)){
       ability.do();
     }
