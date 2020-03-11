@@ -1,0 +1,27 @@
+/**
+* (just an idea)
+* Object system Factor
+* by JAVA
+*/
+public class Factor {
+  
+  pretected List<Attribute> attributes = new ArrayList<>();
+  
+  precteted List<Ability> abilitys = new ArrayList<>();
+  
+  public final void has(Attribute attribute){
+    attributes.add(attribute);
+  }
+  
+  public final void learned(Ability ability){
+    abilitys.add(ability);
+  }
+  
+  public void show(Ability ability){
+    if(this.ability.contain(ability)){
+      ability.do();
+    }
+  }
+  
+  etc..
+}
